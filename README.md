@@ -11,10 +11,10 @@ GamesForYou take the information of the games form Wikipedia ( Web scraping )
 
 In the directory project there are the following directories:
 
-project.py
-test_project.py
-user.csv
-requirements.txt
+project.py,
+test_project.py,
+user.csv,
+requirements.txt,
 README.md
 
 ## user.csv
