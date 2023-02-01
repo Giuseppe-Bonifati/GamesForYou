@@ -1,0 +1,22 @@
+
+#import matplotlib.pyplot as plt
+python -m pip install -U pip
+python -m pip install -U matplotlib
+
+#import pandas as pd  
+pip install pandas
+
+#import requests 
+pip install requests
+
+#from bs4 import BeautifulSoup 
+pip install beautifulsoup4
+
+
+
+#FOR TESTING 
+#import pytest
+pip install pytest
+
+#import mock
+pip install mock
