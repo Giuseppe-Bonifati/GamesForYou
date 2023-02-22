@@ -53,23 +53,23 @@ Then the program will will ask the user if want to see the statistics of the use
 
 In the main function we will have many different functions:
 
-main()
+_main()_
 
-users()
+_users()_
 
-consols()
+_consols()_
 
-genres()
+_genres()_
 
-web()
+_web()_
 
-write_file()
+_write_file()_
 
-stat()
+_stat()_
 
-graf()
+_graf()_
 
-statistics_and_graf()
+_statistics_and_graf()_
 
 
 
