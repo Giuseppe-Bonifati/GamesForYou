@@ -28,7 +28,7 @@ In project.py there is code of the project.
 
 We import on this file all the following:
 
-'''
+```
 import random
 import sys
 from csv import DictWriter
@@ -37,15 +37,15 @@ import matplotlib.pyplot as plt  # type: ignore
 import pandas as pd  # type: ignore # library for data analysis
 import requests  # type: ignore # library to handle requests
 from bs4 import BeautifulSoup  # type: ignore # library to parse HTML documents
-'''
+``
 
 in the main function we will insert all the function to let the program work, the function main to run the program will be called at the end
 
-'''
+```
 if __name__ == "__main__":
     main()
     
-'''
+```
 
 The main function ask the users personal data and then ask  to chose a console and a genre , with this 2 information the program store in a variable using the web function the random game and store in the user.csv the information.
 Then the program will will ask the user if want to see the statistics of the users genre choices , if the user doesn't want to see statistics then the program will end.
@@ -53,14 +53,23 @@ Then the program will will ask the user if want to see the statistics of the use
 In the main function we will have many different functions:
 
 main()
+
 users()
+
 consols()
+
 genres()
+
 web()
+
 write_file()
+
 stat()
+
 graf()
+
 statistics_and_graf()
+
 
 
 
@@ -82,7 +91,8 @@ Ask the users to type the name of the consol and check if the answer is ps5 or s
 The function ask the users to type the name of the genres and check if the answer is on the list of genres , if yes the function will return the list of genres otherwise , if the answer is different then the function will ask again to type the name of the genres.
 
 The list of genres:
-'''
+
+```
 genres =["survival",
         "racing",
         "sports",
@@ -92,25 +102,27 @@ genres =["survival",
         "adventure",
         "stealth",
         "horror"]
-'''
+```
 
 ### web
 
 The function get in input part of the name of the consol and the genres of the game.
 The function use "https://en.wikipedia.org/wiki/" + the consol in input with request to get the response in the form of html.
 The using beautifulsoup the function is going to find part of the html code we , a table with all the games for the consol.
-''' 
+
+```
 soup.find("table", {"id": "softwarelist"})
 
-'''
+```
 Then using pandas the function read the html part (table) and convert it to a pandas dataframe.
 From the dataframe pandas loc all games with the genres in input and will store a random game in a variable.
 
 the function will return a dictionary with all info about the game
-'''
+
+```
 return {"Title": game, "Genre(s)": genres, "Developer(s)": dev, "Publisher(s)": pub}
 
-'''
+```
 
 
 
@@ -129,10 +141,10 @@ The function return a dictionary with all the information
 
 The function is made to show a graphic and take in input a dictionary form stat function
 
-'''
+```
 import matplotlib.pyplot as plt
 
-'''
+```
 
 I use a template form matplotlib library I add on the axis x = all the genres and  axis y = all the average that we get from stat function.
 The function will show the result
@@ -153,13 +165,15 @@ test_web()
 test_consols()
 test_genres()
 to make everything works correctly
-'''
+
+```
 from project import web, consols , genres , stat , users
 import pandas as pd
 import mock # type: ignore
 import builtins
 import math
-'''
+
+```
 
 In test web i recreate the dataframe using the link form wikipedia and a genres , and i confront with a list of all expected tittles to see if the dataframe is correct,
 using web() at index 0
