@@ -1,7 +1,7 @@
-<h1 align="center">GamesForYou</h1>
+<h1 align="center">GamesForYou 🏁 </h1>
 
 
-#### Video Demo:  <URL https://youtu.be/EucxYjQYdQg >
+#### 💎 Video Demo:  <URL https://youtu.be/EucxYjQYdQg >
 #### Description:
 
 GamesForYou is a simple project made for the final CS50 project.
@@ -192,8 +192,12 @@ In test consols and genres im using mock to check if the input of the users  wil
 
 ## Usage
 
+<p align="center">
 <img width="539" alt="image" src="https://user-images.githubusercontent.com/110894389/220594613-7b663c51-04a2-4b2d-977a-6128e9418569.png">
+</p>
 
-<img width="960" alt="image" src="https://user-images.githubusercontent.com/110894389/220594708-99c796cb-3051-4352-a60f-291e3510ea9a.png">
+<p align="center">
+<img width="953" alt="image" src="https://user-images.githubusercontent.com/110894389/220594960-b7e72bf6-52e7-4707-9650-4a3ad258809b.png">
+</p>
 
 
