@@ -187,3 +187,13 @@ ex :
 df = pd.DataFrame(web("List_of_Xbox_Series_X_and_Series_S_games","Sports"),index=[0])
 ```
 In test consols and genres im using mock to check if the input of the users  will return the expected result.
+
+
+
+## Usage
+
+<img width="539" alt="image" src="https://user-images.githubusercontent.com/110894389/220594613-7b663c51-04a2-4b2d-977a-6128e9418569.png">
+
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/110894389/220594708-99c796cb-3051-4352-a60f-291e3510ea9a.png">
+
+
