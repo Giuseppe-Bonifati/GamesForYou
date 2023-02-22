@@ -9,18 +9,23 @@ from bs4 import BeautifulSoup  # type: ignore # library to parse HTML documents
 
 def main():
     file_csv = "user.csv"
-    user = users()
+    # assign to the user the function users() that return a dictionary with all the information about the user
+    user = users() 
     print(
         f"\n*******************{user['name']} Welcome to GamesForYou ********************************"
     )
     print(
         "********We will help you to find the best games for your console**********\n"
     )
+    # assign to the var console the value that return the fuction consols().
     consol = consols()
+    # return the genres game on the var genre
     genre = genres().capitalize()
     if consol == "serie x":
+        # web return in the var info a random game
         info = web("List_of_Xbox_Series_X_and_Series_S_games", genre)
     elif consol == "ps5":
+        # web return in the var info a random game
         info = web("List_of_PlayStation_5_games", genre)
 
     print("\nGamesForYou choose:\n")
@@ -29,7 +34,9 @@ def main():
     confirmation = input("\nIf you want to see all statistics enter y and press enter , all other different input will close the program: ")
     if confirmation in ["yes","y","Y","YES","Yes"]:
         print("\n\n**********************************Bye!! Hope to see you soon :)**************************************")
+        #stat() return a dictionary with all avarage statistics
         average_dict = stat()
+        #print on the console all the statistics and also (the function statistics_and_graf call another function graf() to show the graphs)
         statistics_and_graf(average_dict)
     else:
         sys.exit("\n\n**********************************Bye!! Hope to see you soon :)**************************************")    
@@ -37,7 +44,7 @@ def main():
 
 
 def statistics_and_graf(average_dict):
-    '''this function print all statistics and show the use the function graf() to show the graphs'''
+    '''this function print all statistics and call the function graf() to show the graphs'''
     print("\nFavorite consol: PS5 {:.2f}%  SERIE X {:.2f}%".format(average_dict['play_stations'],average_dict['serie_x']))
     print("Average ages of our users: {:.2f}".format(average_dict['age']))
     print("\n\nUsers favorite types of game , divided by genres:\n")
@@ -94,10 +101,9 @@ def graf(average_dict):
 
 
 def write_file(file_csv, info, user, consol):
-    '''input the file to be written
-       input the dictionary info with all the values taken from wikipedia
-       input user name and consol
-       this function with add to the dictionary the user name and consol and will write all the dictionary in a file csv'''
+    '''the fuction get 4 arguments the file to be written, the dictionary info with all the values from wikipedia,
+       the user name and the consol
+       this function will update and write info in file csv'''
     field = [
         "UserName",
         "UserFamilyName",
@@ -145,7 +151,7 @@ def web(link, genre):
     # using the game (title) find all the rest of the data frame (row)
     base = df.loc[df["Title"] == game]
 
-    # get tte genre developers the publisher of the random games
+    # get the genre developers the publisher of the random games
     genres = base["Genre(s)"].values[0]
     dev = base["Developer(s)"].values[0]
     pub = base["Publisher(s)"].values[0]
@@ -236,17 +242,9 @@ def stat():
     sports = (df[df["Genre(s)"] == "Sports"].count().values[0]) * (100 / number_of_users)
     fight = (df[df["Genre(s)"] == "Fighting"].count().values[0]) * (100 / number_of_users)
     shooters = (df[df["Genre(s)"] == "Shooters"].count().values[0]) * (100 / number_of_users)
-
-    
-
     action = (df[df["Genre(s)"] == "Action-Adventure"].count().values[0]) * (100/ number_of_users)
-    
     adventure = (df[df["Genre(s)"] == "Adventure"].count().values[0]) * (100 / number_of_users)
-    
-
     stealth = (df[df["Genre(s)"] == "Stealth"].count().values[0]) * (100 / number_of_users)
-    
-
     horror =(df[df["Genre(s)"] == "Horror"].count().values[0]) * (100 / number_of_users)
 
     return {"age":age,"play_stations": play_stations,"serie_x": serie_x,"survival": surv,"racing": racing,"sports":sports,"fight": fight,"shooters":shooters,"action": action,"adventure":adventure,"stealth":stealth,"horror":horror}
