@@ -37,12 +37,13 @@ import matplotlib.pyplot as plt  # type: ignore
 import pandas as pd  # type: ignore # library for data analysis
 import requests  # type: ignore # library to handle requests
 from bs4 import BeautifulSoup  # type: ignore # library to parse HTML documents
-``
+```
 
-in the main function we will insert all the function to let the program work, the function main to run the program will be called at the end
+In the main function we will insert all the function to let the program work, the function main to run the program will be called at the end
 
 ```
 if __name__ == "__main__":
+    
     main()
     
 ```
