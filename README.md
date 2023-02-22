@@ -179,8 +179,9 @@ import math
 In test web i recreate the dataframe using the link form wikipedia and a genres , and i confront with a list of all expected tittles to see if the dataframe is correct,
 using web() at index 0
 
+
 ex :
-'''
+```
 df = pd.DataFrame(web("List_of_Xbox_Series_X_and_Series_S_games","Sports"),index=[0])
-'''
+```
 In test consols and genres im using mock to check if the input of the users  will return the expected result.
