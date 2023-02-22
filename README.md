@@ -9,7 +9,7 @@ GamesForYou will choose a random game for PS5 or X box Series X based on the typ
 In case you are not sure , the program will chose for you  and at the end will show also all statistics of all the users choices (type of games).
 GamesForYou take the information of the games form Wikipedia ( Web scraping )
 
-## Directory
+<h2 align="center">Directory</h2>
 
 In the directory project there are the following directories:
 
@@ -19,12 +19,12 @@ user.csv,
 requirements.txt,
 README.md
 
-## user.csv
+<h2 align="center">user.csv</h2>
 
 The csv file contains all the information of the users  , we will use the pandas library to generate and read the data from the csv file.
 
 
-## project.py
+<h2 align="center">project.py</h2>
 
 In project.py there is code of the project.
 
@@ -161,7 +161,7 @@ The function will print on the terminal all the information form the stat functi
 
 
 
-## test_project.py
+<h2 align="center">test_project.py</h2>
 
 In this file im testing 3 function of my project.py to see if everything works correctly
 test_web()
@@ -190,7 +190,7 @@ In test consols and genres im using mock to check if the input of the users  wil
 
 
 
-## Usage
+<h2 align="center">Usage</h2>
 
 <p align="center">
 <img width="539" alt="image" src="https://user-images.githubusercontent.com/110894389/220594613-7b663c51-04a2-4b2d-977a-6128e9418569.png">
