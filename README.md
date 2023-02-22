@@ -74,7 +74,7 @@ statistics_and_graf()
 
 
 
-### users
+### users()
 
 
 The function ask the users for a name , surname and age.
@@ -82,12 +82,12 @@ The function ask the users for a name , surname and age.
 Raise an error all the time that name and surname  are not all alpha and if age is less then 18 with sys.exit("") will close the program.
 The function  return a dictionary with name surname and age
 
-### consols
+### consols()
 
 Ask the users to type the name of the consol and check if the answer is ps5 or serie x , then return the name of the consol otherwise , if the answer is different then the function will ask all the time to type the name of the consol
 
 
-### genres
+### genres()
 
 The function ask the users to type the name of the genres and check if the answer is on the list of genres , if yes the function will return the list of genres otherwise , if the answer is different then the function will ask again to type the name of the genres.
 
@@ -105,7 +105,7 @@ genres =["survival",
         "horror"]
 ```
 
-### web
+### web()
 
 The function get in input part of the name of the consol and the genres of the game.
 The function use "https://en.wikipedia.org/wiki/" + the consol in input with request to get the response in the form of html.
@@ -127,18 +127,18 @@ return {"Title": game, "Genre(s)": genres, "Developer(s)": dev, "Publisher(s)": 
 
 
 
-### write_file
+### write_file()
 
 The function take in input all the information about the user plus the name of the game and all the info of the game and will write all on the file user.csv.
 
 
-### stat
+### stat()
 
 The function stat() read the file csv and using pandas will count the number of the user the average (mean) of the ages and the average of the genres and consol present on the file.
 The function return a dictionary with all the information
 
 
-### graf
+### graf()
 
 The function is made to show a graphic and take in input a dictionary form stat function
 
@@ -152,7 +152,7 @@ The function will show the result
 
 
 
-### statistics_and_graf
+### statistics_and_graf()
 
 The function will print on the terminal all the information form the stat function with the average and will use the function graf to show the graphic in a different window
 
