@@ -1,4 +1,4 @@
-# GamesForYou
+<h1 align="center">GamesForYou</h1>
 #### Video Demo:  <URL https://youtu.be/EucxYjQYdQg >
 #### Description:
 
