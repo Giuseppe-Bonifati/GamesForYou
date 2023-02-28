@@ -1,7 +1,7 @@
 <h1 align="center">GamesForYou 🏁 </h1>
+<a href="https://www.linkedin.com/in/giuseppe-bonifati-738640261/"><img src="https://img.shields.io/badge/-Linkedin-blue"></a>
 
-
-#### 💎 Video Demo:  <URL https://youtu.be/EucxYjQYdQg >
+#### Video Demo:  <URL https://youtu.be/EucxYjQYdQg >
 #### Description:
 
 GamesForYou is a simple project made for the final CS50 project.
