@@ -32,7 +32,7 @@ In project.py there is code of the project.
 
 We import on this file all the following:
 
-```
+```python
 import random
 import sys
 from csv import DictWriter
@@ -45,9 +45,8 @@ from bs4 import BeautifulSoup  # type: ignore # library to parse HTML documents
 
 In the main function we will insert all the function to let the program work, the function main to run the program will be called at the end
 
-```
+```python
 if __name__ == "__main__":
-    
     main()
     
 ```
