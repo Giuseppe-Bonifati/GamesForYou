@@ -1,13 +1,15 @@
 <h1 align="center">GamesForYou 🏁 </h1>
-<a href="https://www.linkedin.com/in/giuseppe-bonifati-738640261/"><img src="https://img.shields.io/badge/-Linkedin-blue"></a>
+<a href="https://www.linkedin.com/in/giuseppe-bonifati-738640261/"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue"></a>
 
-#### Video Demo:  <URL https://youtu.be/EucxYjQYdQg >
+
 #### Description:
 
 GamesForYou is a simple project made for the final CS50 project.
 GamesForYou will choose a random game for PS5 or X box Series X based on the type of game that the user will choose.
 In case you are not sure , the program will chose for you  and at the end will show also all statistics of all the users choices (type of games).
 GamesForYou take the information of the games form Wikipedia ( Web scraping )
+
+#### Video Demo:  https://youtu.be/EucxYjQYdQg 
 
 <h2 align="center">Directory</h2>
 
