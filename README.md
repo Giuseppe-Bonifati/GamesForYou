@@ -31,7 +31,7 @@ In the directory project there are the following directories:
 
 
 
-## Design 
+## Requirements
 
 In project.py there is code of the project.
 
