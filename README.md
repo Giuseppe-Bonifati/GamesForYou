@@ -1,8 +1,11 @@
 # GamesForYou 🏁 
-<a href="https://www.linkedin.com/in/giuseppe-bonifati-738640261/"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue"></a>
+
+<a href="https://www.linkedin.com/in/giuseppe-bonifati-738640261/"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue"></a> 
+
 
 
 #### Description:
+   
 
 GamesForYou is a simple project made for the final CS50 project.
 GamesForYou will choose a random game for PS5 or X box Series X based on the type of game that the user will choose.
