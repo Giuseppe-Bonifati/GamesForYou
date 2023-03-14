@@ -51,7 +51,7 @@ from bs4 import BeautifulSoup  # type: ignore # library to parse HTML documents
 
 
 
-## Usage
+## Output
 
 <p align="center">
 <img width="539" alt="image" src="https://user-images.githubusercontent.com/110894389/220594613-7b663c51-04a2-4b2d-977a-6128e9418569.png">
