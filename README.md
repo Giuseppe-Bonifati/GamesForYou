@@ -35,7 +35,7 @@ import pandas as pd  # type: ignore # library for data analysis
 import requests  # type: ignore # library to handle requests
 from bs4 import BeautifulSoup  # type: ignore # library to parse HTML documents
 ```
-### List of the games
+#### List of the games
 
 https://en.wikipedia.org/wiki/List_of_PlayStation_5_games
 
