@@ -14,7 +14,7 @@ GamesForYou take the information of the games form Wikipedia ( Web scraping )
 #### Video Demo:  <a href="https://youtu.be/EucxYjQYdQg"> <img src="https://img.shields.io/badge/-Play-f00?logo=youtube"></a> 
 
 
-## Installation
+## Installation :package:
 
 <a href=https://www.python.org/ ><img src="https://img.shields.io/badge/-Python-white?logo=python"></a> <a href="https://pandas.pydata.org/"><img src="https://img.shields.io/badge/-Pandas-130654?logo=pandas"></a>  <a href="https://matplotlib.org/"><img src="https://img.shields.io/badge/-Matplotlib-blue"></a>
 <a href="https://www.wikipedia.org/"><img src="https://img.shields.io/badge/-Wikipedia-grey?logo=wikipedia"></a>    <a href="https://www.xbox.com/en-US/"><img src="https://img.shields.io/badge/-Xbox-107c10?logo=xbox"></a> <a href="https://www.playstation.com/en-us/"><img src="https://img.shields.io/badge/-Playstation%205-black?logo=Playstation5"></a>
