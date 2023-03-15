@@ -4,7 +4,7 @@
 
 
 
-#### Description:
+#### Description
    
 
 GamesForYou is a simple project made for CS50 final project.
