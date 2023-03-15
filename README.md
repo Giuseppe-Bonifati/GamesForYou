@@ -1,4 +1,4 @@
-# GamesForYou 🏁 
+# GamesForYou :video_game: :bar_chart: 
 
 <a href="https://www.linkedin.com/in/giuseppe-bonifati-738640261/"><img src="https://img.shields.io/badge/LinkedIn-blue?style=flat&logo=linkedin&labelColor=blue"></a> 
 
@@ -7,12 +7,39 @@
 #### Description:
    
 
-GamesForYou is a simple project made for the final CS50 project.
-GamesForYou will choose a random game for PS5 or X box Series X based on the type of game that the user will choose.
-In case you are not sure , the program will chose for you  and at the end will show also all statistics of all the users choices (type of games).
+GamesForYou is a simple project made for CS50 final project.
+GamesForYou will choose a random PS5 or Xbox Series X games, based on the type of game that the user will choose, also at the end the program will show you all statistics of all the users choices (type of games).
 GamesForYou take the information of the games form Wikipedia ( Web scraping )
 
-#### Video Demo:  https://youtu.be/EucxYjQYdQg 
+#### Video Demo:  <a href="https://youtu.be/EucxYjQYdQg"> <img src="https://img.shields.io/badge/-Play-f00?logo=youtube"></a> 
+
+
+## Installation
+
+<a href=https://www.python.org/ ><img src="https://img.shields.io/badge/-Python-white?logo=python"></a> <a href="https://pandas.pydata.org/"><img src="https://img.shields.io/badge/-Pandas-130654?logo=pandas"></a>  <a href="https://matplotlib.org/"><img src="https://img.shields.io/badge/-Matplotlib-blue"></a>
+<a href="https://www.wikipedia.org/"><img src="https://img.shields.io/badge/-Wikipedia-grey?logo=wikipedia"></a>    <a href="https://www.xbox.com/en-US/"><img src="https://img.shields.io/badge/-Xbox-107c10?logo=xbox"></a> <a href="https://www.playstation.com/en-us/"><img src="https://img.shields.io/badge/-Playstation%205-black?logo=Playstation5"></a>
+
+<a href="https://code.visualstudio.com/"><img src="https://img.shields.io/badge/-Visual%20Studio%20Code-0098ff?logo=visualstudiocode" ></a>
+
+In the file <a href="https://github.com/Giuseppe-Bonifati/GamesForYou/blob/main/requirements.txt"><img src="https://img.shields.io/badge/-requirements.txt-white?"></a> there are all the packages to be installed 
+
+Then we import on project.py all the following:
+
+```python
+import random
+import sys
+from csv import DictWriter
+
+import matplotlib.pyplot as plt  # type: ignore
+import pandas as pd  # type: ignore # library for data analysis
+import requests  # type: ignore # library to handle requests
+from bs4 import BeautifulSoup  # type: ignore # library to parse HTML documents
+```
+### List of the games
+
+https://en.wikipedia.org/wiki/List_of_PlayStation_5_games
+
+https://en.wikipedia.org/wiki/List_of_Xbox_Series_X_and_Series_S_games
 
 ## Directory
 
@@ -34,23 +61,15 @@ In the directory project there are the following directories:
 
 
 
-## Installation
+## Design
 
-In project.py there is code of the project.
+All the project (code) is on the file project.py.
 
-We import on this file all the following:
+The program take the users informations and each time check if the informations are valid , then with the help of request and Beautiful Soup and pandas the program extract content and data from Wikipedia and return a random game.
 
-```python
-import random
-import sys
-from csv import DictWriter
+Once we display the result , the program will save all the informations in a file csv, in this case in the file user.csv.
 
-import matplotlib.pyplot as plt  # type: ignore
-import pandas as pd  # type: ignore # library for data analysis
-import requests  # type: ignore # library to handle requests
-from bs4 import BeautifulSoup  # type: ignore # library to parse HTML documents
-```
-
+At the pandas with help to calculated all the statistics and it will be displayed to the users with Matplotlib    
 
 
 
@@ -66,3 +85,5 @@ from bs4 import BeautifulSoup  # type: ignore # library to parse HTML documents
 
 
 ## License
+
+<a href="https://github.com/Giuseppe-Bonifati/GamesForYou/blob/main/LICENSE.md"><img src="https://img.shields.io/badge/license-MIT-blue"></a>
